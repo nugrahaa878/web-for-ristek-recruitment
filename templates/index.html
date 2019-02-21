@@ -1,0 +1,54 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{judul}}</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Staatliches" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div id="container">
+		<header>
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo">
+					Code
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="word">
+				<h1>Hello, I'm Ari Angga Nugraha</h1>
+				<p>I Extremely motivated to <span>constantly</span> develop my skills and <span>grow</span> in Software Engineering especially <span>Web Development</span>. Love to learn something new and <span>learn</span> from other people. I'm your <span>future</span> Software Engineer</p>
+				<div class="resume">
+					<h4><a href="https://drive.google.com/open?id=1OVUKRoC-8toMNCbECLOskFk0EAB03-tH" target="_blank">SEE MY RESUME</a> <a href="https://drive.google.com/open?id=1AUhe0EGl9ji8oBtcLxzHG8tGVMuoCnyL" target="_blank">SEE MY PROJECT</a></h4>
+				</div>
+			</div>
+			
+		</header>
+	</div>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$(".menu-icon").on("click", function(){
+				$("nav ul").toggleClass("showing");
+			});
+		});
+
+	</script>
+
+</body>
+</html>

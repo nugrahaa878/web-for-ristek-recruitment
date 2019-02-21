@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Staatliches" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'about/css/styles.css' %}">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div id="container">
+		<div class="content">
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo">
+					Code
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+		<div class="main-content">
+					<div class="item">
+						<img src="{% static 'about/img/ganteng.jpg' %}">
+					</div>
+					<div class="item">
+						<h3 class="greetings">Hy, Im ari</h3>
+						<p class="greetings_content">Im using this jacket in this photo because i believe this jacket have a superpower<br> to attract people</p>
+					</div>
+					<div class="tips">
+						<h5><a href="https://www.youtube.com/watch?v=S4YDfN6w0P0" target="_blank">this is not a template website, trust me. I just take <br>an image background from the internet</a></h5>
+					</div>
+					<div class="item item-where">
+						<h1 class="where">Where I come From</h1>
+						<h3>honestly, im from here</h3>
+						<img src="{% static 'about/img/konoha.jpg' %}" style="width: 600px">
+					</div>
+					<div class="item">
+						<h3 class="after-hokage">After <span>17</span> years, i stop dreaming to be a <span>hokage </span> <br> I believe <span>ninja</span> cannot make world be better <br> <span>so</span> i decided to "merantau", join <span>SBMPTN</span> and now,<br><br></h3>
+						<h1>I'm here</h1>
+					</div>
+					<div class="item univ">
+						<h1 class="univ-ui">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/0q1gov-zb6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</h1>
+					</div>
+					<div class="item  i-do">
+						<h1 class="actually">Where i actually</h1>
+					</div>
+					<div class="item fasilkom">
+						<div>
+							<img  class="fasilkom-img" src="{% static 'about/img/fasilkom.png' %}">	
+						</div>
+						<div class="fasilkom-content">
+							<h2>Faculty of Computer Science, Universitas Indonesia</h2>
+							<p><i>August 2018 - now</i></p>	
+							<p>Fasilkom is the best faculty of Computer Science in Indonesia <br>Fasilkom has produced many skillfull and competent graduates. They have <br>start some start up, creating business, or be a part of Information <br>Technology Employees in various unicorn and other company in Indonesia and abroad</p>
+						</div>
+					</div>
+					<div class="item video">
+						<h2>Here's the video about my Faculty (best)</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/Q2vl7UnY7U4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="item skill">
+						<div>
+							<h1 class="mySkill">My Skill</h1>	
+						</div>
+						<div class="skill-container">
+							<h4>Learning</h4>
+							<div class="bar">
+								<div class="bars html">90%</div>
+							</div>
+							<h4>HTML CSS Javascript</h4>
+							<div class="bar">
+								<div class="bars css">30%</div>
+							</div>
+							<h4>Django</h4>
+							<div class="bar">
+								<div class="bars js">20%</div>
+							</div>
+							<h4>Watching anime till drop</h4>
+							<div class="bar">
+								<div class="bars django">110%</div>
+							</div>
+						</div>
+					</div>
+					<div class="item i-feel">
+						
+							<h1>What I Feel When I make This Website</h1>
+						
+						
+							<p><strong>Konten ini sengaja saya buat dalam bahasa Indonesia. Berbagai suka dan duka telah saya lalui saat membuat website ini. Proses pembuatan website ini telah sukses membuat saya kurang tidur dan mata perih. <br>Namun, entah kenapa saya sangat menikmati proses pembuatan website sederhana ini. Walaupun saya kurang tidur, saya tidak merasakan ngantuk walau kadang saya melakukan proses pembuatan sampai jam 1 atau 2 malam.<br>
+							Rintangan terberat saya dalam pembuatan website ini adalah bagian front end, terutama untuk responsive nya. Bagian backend juga sulit karena saya baru belajar Django 1 minggu yang lalu.<br>
+							Saya harus bolak balik youtube untuk membuka open class dan video tutorial lainnya.<br>
+							Karena itulah jika saya dapat bergabung dengan Ristek Fasilkom, saya dapat belajar dan mempelajari hal hal baru lainnya yang berhubungan dengan Web Development. Karena saya rasa mempelajari hal baru dengan senior dan teman teman lainnya akan sangat menyenangkan nantinya.<strong></p>
+					
+					</div>
+					<div class="item thanks">
+						<h1>Thanks to</h1>
+						<div>
+							<h3>Kak Andre (yang udah bantuin debug debug, maaf kalau spam kak)</h3>
+							<h3>This youtube channel (Recommended for newbie (me too) )</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/hPXNP1NoVNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="item end">
+						<img src="{% static 'about/img/naruto.jpg' %}">
+					</div>
+					
+					<div class="item end">
+						<h1></h1>
+					</div>
+				</div>
+	</div>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$(".menu-icon").on("click", function(){
+				$("nav ul").toggleClass("showing");
+			});
+		});
+
+	</script>
+
+</body>
+</html>
+

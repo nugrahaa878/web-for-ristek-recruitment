@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Staatliches" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'contact/css/styles.css' %}">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div id="container">
+		<div class="content">
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo">
+					Code
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+		<div class="main-content">
+			<div class="contact-word">
+				<h1>Hey, if you interest with me, this is my contact</h1>
+			</div>
+			<div class="image">
+				<a href="mailto:nugrahaa878@gmail.com?Subject=Hello%20again" target="_blank"><img class="image-content" src="{% static "contact/img/gmail.png" %}"></a>
+				<a href="https://www.linkedin.com/in/ari-nugraha-7a6361175/" target="_blank"><img class="image-content" src="{% static "contact/img/linkedin.png" %}"></a>
+				<a href="https://line.me/ti/p/QQnbpPGlij" target="_blank"><img class="image-content line" src="{% static "contact/img/line.png" %}"></a>
+				<a href="https://github.com/nugrahaa878" target="_blank"><img class="image-content" src="{% static "contact/img/github.png" %}"></a>
+			</div>
+			<div class="comment-me">
+				<h2>Hey, can you give me some advice so <br>I can learn, learn and learn</h2>
+				<form method="POST">
+					
+					<table>
+						{% csrf_token %}
+						{{ data_form.as_table }}
+					</table>
+
+					<button type="Submit">Submit</button>
+
+					<h1>Comment</h1>
+					<div class="komentar">
+						{% for post in posts %}
+							<div class="komentar-content">
+								<h2>{{post.nama}}</h2>
+								<p>{{post.komentar}}</p>	
+							</div>
+						{% endfor %}	
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$(".menu-icon").on("click", function(){
+				$("nav ul").toggleClass("showing");
+			});
+		});
+
+	</script>
+
+</body>
+</html>
+

@@ -1,0 +1,303 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	font-family: helvetica, cursive;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.main-content{
+	background: #48dbfb;
+	margin: 0;
+	padding-top: 5vh;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column wrap;
+}
+
+.greetings{
+	font-size: 40px;
+	margin-bottom: 0;
+}
+.greetings_content{
+	margin-top: 10px;
+	color: white;
+	font-weight: 2px;
+	font-size: 20px;
+}
+
+.item{
+	background: rgb(0,0,0,0);
+}
+
+.item img{
+	width: 40vh;
+}
+
+
+
+.univ{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+
+.item .coding{
+	width: 400px;
+}
+
+
+.univ-ui{
+	align-self: flex-end;
+}
+.content {
+	width: 100%;
+	height: 10vh;
+	background: #48dbfb;
+}
+
+.logo {
+	position: fixed;
+	float: left;
+	margin: 16px 36px;
+	color: black;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+.where{
+	margin-top: 80px;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: white;
+	padding-left: 10px;
+}
+
+.after-hokage {
+	margin-top: 70px;
+}
+
+.item img{
+	border-radius: 10px;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	background: rgba (0, 0, 0, 0);
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+	transition: 1s;
+}
+
+nav.black ul {
+	background: #000;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.menu-icon{
+	width: 100%;
+	background: #000;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	text-align: right;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+
+.what-i-do{
+	display: flex;
+	width: 100px;
+}
+
+.i-do h1{
+	margin-top: 50px;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: white;
+}
+
+.fasilkom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    width: 70%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+.actually{
+	width: 500px;
+}
+
+.fasilkom img {
+	width: 150px;
+}
+
+.fasilkom-content{
+	padding-left: 50px;
+	padding-top: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.video{
+	margin-top: 50px;
+}
+
+.mySkill{
+	background: white;
+	border-radius: 10px;
+	margin-top: 80px;
+	width: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.skill-container{
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.bar{
+	margin-top: 0;
+	width: 100%;
+	background-color: #ddd
+}
+
+.bars{
+	text-align: right;
+	padding-top: 10px;
+	color: white;
+}
+
+.i-feel h1{
+	margin-top: 80px;
+	margin-right: 300px;
+	margin-left: 300px;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: white;
+}
+
+.i-feel p{
+
+	text-align: center;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.end img{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 600px;
+}
+
+.html {width: 90%; background-color: #4CAF50;} 
+.css {width: 30%; background-color: #2196F3;} 
+.js {width: 20%; background-color: #f44336;} 
+.django {width: 110%; background-color: #808080;} 
+
+span{
+	color: white;
+}
+
+.thanks h1{
+	margin-top: 80px;
+	margin-right: 300px;
+	margin-left: 300px;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: white;
+}
+.thanks h3{
+	
+	margin-right: 300px;
+	margin-left: 300px;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: white;
+	border: 2px solid black;
+}
+
+
+@media(max-width: 580px){
+	.logo{
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+	}
+
+	nav ul{
+		max-height: 0px;
+		background: #000;
+	}
+
+	nav.black ul{
+		background: #000;
+	}
+
+	.showing{
+		max-height: 20em;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+
+	.word {
+		margin: 0;
+		padding-left: 10vh;
+		padding-right: 10vh;
+		text-align: center;
+		padding-top: 10vh;
+	}
+}
